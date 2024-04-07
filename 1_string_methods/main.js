@@ -45,3 +45,45 @@ console.log(fullname.replaceAll("  ", "Omoke "))
 // padStart() & padEnd() - Pad the start or end of a string with a give character to get a desired string length
 console.log(fullname.padStart(36, "ty"));
 console.log(fullname.padEnd(36, "hu"));
+
+
+
+// string slicing - creating a substring from a portion of another string
+
+// fullname = fullname.trim();
+// console.log(fullname);
+
+// let firstname = fullname.slice(0,7);
+// let middlename = fullname.slice(8, 15);
+// let lastname = fullname.slice(16);
+
+// console.log(firstname);
+// console.log(middlename);
+// console.log(lastname);
+
+// let firstChar = fullname.slice(0,1); 
+// let lastChar = fullname.slice(-1); 
+// let firstThreeChars = fullname.slice(0,3); // The first 3 characters
+// let lastThreeChars = fullname.slice(-3); // The last 3 characters
+
+
+// console.log(firstChar);
+// console.log(lastChar);
+// console.log(firstThreeChars);
+// console.log(lastThreeChars);
+
+// Combining string slicing with indexOf method to make it more dynamic
+// let fullName = "Onyango Dickens";
+
+// let firstName = fullName.slice(0, fullName.indexOf(" "));
+// let lastName = fullName.slice(fullName.indexOf(" ") + 1);
+
+// console.log(firstName)
+// console.log(lastName);
+
+const email = "omondikens1@gmail.com";
+let userName = email.slice(0, email.indexOf("@"));
+let extension = email.slice(email.indexOf("@") + 1);
+
+console.log(userName);
+console.log(extension);
