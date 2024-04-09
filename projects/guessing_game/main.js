@@ -1,3 +1,11 @@
+/*
+ - Math.floor() generates a random floating point number between 0 (inclusive) and 1 (exclusive)
+ - (maximumNumber - minimumNumber + 1) expression calcultaes the lenght of the range. (max - min) gives the length of the range and adding 1 ensures that max is inclusive.
+ - Math.floor() rounds down the generated random floating point number to the nearest integer.
+ - Finally we add min to the result to shift the random number to start from min instead of starting from zero.
+*/
+
+
 const  minimumNumber = 1;
 const maximumNumber = 100;
 const answer = Math.floor(Math.random() * (maximumNumber - minimumNumber + 1)) + minimumNumber;
