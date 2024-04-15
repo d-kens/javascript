@@ -2,7 +2,7 @@
  - function declaration: Defining a reusable block of code that perform a specific task.
  - function expression: A way to define functions as values or variables.
  - Benefits of function expression:
-    1. We don't have to think of function names. We are no polluting the global name space with function names.
+    1. We don't have to think of function names. We are not polluting the global name space with function names.
  - Function expression are used in:
     1. Callbacks in asynchronous operations
     2. Higher Order Functions
