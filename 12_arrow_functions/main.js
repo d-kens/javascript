@@ -1,11 +1,11 @@
 /*
-    - Arrow functions: A concise way fo write function expressions. Good for simple function that you use only once.
+    - Arrow functions: A concise way to write function expressions. Good for simple function that you use only once.
     - Syntax: (parameter) => some code
 */
 
 const sayHello = (name, age) => { console.log(`Hello ${name}`) 
-                             console.log(`You are ${age} old`)
-                           };
+                                  console.log(`You are ${age} old`)
+                                };
 
 sayHello('Onyango Dickens', 56)
 
