@@ -1,9 +1,15 @@
+/**
+ * Object 
+ * The `this` keyword.
+ * Constructor 
+ */
+
+
+
 /*
     - An Object is a collection of related properties and methods
     - Can represent real world objects (people, product, places)
-
 */
-
 const person = {
     firstname: 'Onyango',
     lastname: 'Dickens',
@@ -22,6 +28,14 @@ const person1 = {
     sayHello: () => console.log('Hi! I am Diane Mosoti')
 }
 
+const person3 = {
+    firstname: 'Charles',
+    lastname: 'Mieno',
+    age: 30,
+    isEmployed: false,
+    sayHello: () => console.log(`Hi I am Charles`)
+}
+
 console.log(person.firstname);
 console.log(person.lastname);
 console.log(person.age);
@@ -36,7 +50,8 @@ person1.sayHello();
 
 
 /*
- - `this` keyword is a refrence to the object where `this` is used.
+ - The `this` keyword is a refrence to the object where `this` is used.
+ - The object depends on the immediate context. person.name = this.name
 
 */
 const person2 = {
@@ -55,18 +70,17 @@ person2.sayHello();
 - Constructor: Is a special method for defining the properties and methods of objects.
 - Constructors come in handy when we have to create a lot of objects.
 - Instead of manually creating these objects, we can use a contructor. All we have to do to construct these objects is to pass in unique data into the constuctor.
-
 - Constructors help with code reusability.
 */
 
 
-function Car(make, model, year, color) { // Reusble method to create car objects
+function Car(make, model, year, color) { // Reusable method to create car objects
     this.make = make,
     this.model = model,
     this.year = year,
     this.color = color,
     this.drive = function() {
-        console.log(`Yopu drive ${this.model}`)
+        console.log(`You drive ${this.model}`);
     }
 }
 
