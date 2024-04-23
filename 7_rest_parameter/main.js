@@ -1,5 +1,6 @@
 /*
     - rest parameters: Allows a function to work with a variable number of arguements by bundling them into an array.
+    - Useful when you have indeterminate number of arguements to apss to a function.
     - Rest parameter can used to:
         1. Bundle separate elements into an array.
         2. Find the sum/average of a variable number of arguements.
