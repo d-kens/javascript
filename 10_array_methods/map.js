@@ -1,7 +1,7 @@
 /*
     - map = accepts a callback function then applies that function to each element of an array, then retuns a new array.
     - map method is very similar to the forEach method but after completion, the map method returns a new array (does not change the original array)
-    whle forEach cahnges the original array.
+    whle forEach changes the original array.
 */
 const numbers = [1, 2, 3, 4, 5];
 

@@ -21,6 +21,7 @@ numbers.forEach(square);
 numbers.forEach(display);
 
 
+
 let fruits = ["mango", "apple", "orange", "banana"];
 
 function upperCase(element, index, array) {
@@ -33,3 +34,15 @@ function capitalize(element, index, array) {
 
 fruits.forEach(capitalize);
 fruits.forEach(display);
+
+
+let values = [10, 20, 30, 40, 50, 60, 70, 80, 90];
+// values.forEach(function(element, index, array) {
+//     array[index] = element * 3
+// });
+
+values.map(function(element, index, array) {
+    array[index] = element * 2;
+})
+
+console.log(values)
