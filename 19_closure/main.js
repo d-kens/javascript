@@ -17,10 +17,25 @@ function outer() {
 
 outer()
 
+
 /*
-    A closure Maintaining the State (remember previous state/value of a variable) of a variable and make it private
+    - A closure can maintain the state of a variable (remember the previous state/value of a variable)
+    - It make the variable private
 */
 
+function increment() {
+    let count = 0
+    count++;
+    console.log(`Count increased to ${count}`);
+}
+// Notice that everytime we call the increment function the count variable will always be reset (Its previous state can't be recalled)
+// The issue can be solved by declaring the count variable outside the function but it is not private anybody and anything can access and change it
+increment() // counter increased to 1
+increment() // counter increased to 1
+increment() // counter increased to one
+
+console.log('Using closures')
+// A closure solves this since it can maintain the state of variable and make private
 function createCounter() {
     let count = 0;
 
@@ -33,13 +48,47 @@ function createCounter() {
         return count;
     }
 
-    return { increment, getCount}
+    return { increment, getCount }
 }
+
 
 const counter = createCounter();
 counter.increment();
 counter.increment();
 counter.increment();
-counter.increment();
 
-console.log(`The current count is ${counter.getCount()}`)
+console.log(counter.count); // undefined since the count variable is private
+
+console.log(counter.getCount());
+
+
+
+
+function createGame() {
+    let score = 0;
+
+    function increaseScore(points) {
+        score += points;
+        console.log(`+${points}pts`);
+    }
+
+    function decreaseScore(points) {
+        score -= points;
+        console.log(`-${points}pts`)
+    }
+
+    function getScore() {
+        return score;
+    }
+
+    return { increaseScore, decreaseScore, getScore }
+}
+
+const game = createGame();
+game.increaseScore(100);
+game.decreaseScore(6);
+game.increaseScore(1);
+console.log(game.getScore())
+
+
+
