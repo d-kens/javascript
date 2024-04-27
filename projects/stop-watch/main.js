@@ -55,37 +55,10 @@ function update() { // called repeatedly by the interval set in start() method
 
 
 
+/*
 
-// const display = document.getElementById("display");
-// let timer = null;
-// let startTime = 0;
-// let elapsedTime = 0;
-// let isRunning = false;
+- The Unix epoch, or Unix time, is a system for tracking time based on the number of seconds that have elapsed since 00:00:00 Coordinated Universal Time (UTC) on January 1, 1970. 
+- This point in time is referred to as the "epoch" in Unix systems.
 
 
-// function start() {
-//     if(!isRunning) {
-//         startTime = Date.now() - elapsedTime;
-//         timer = setInterval(update, 10);
-//         isRunning = true;
-//     }
-// }
-
-// function stop() {
-//     if(isRunning) {
-//         clearInterval(timer);
-//         elapsedTime = Date.now() - startTime;
-//         isRunning = false;
-//     }
-// }
-
-// function reset() {
-//     clearTimeout(timer)
-//     startTime = 0;
-//     elapsedTime = 0;
-//     isRunning = false;
-
-//     display.textContent = "00:00:00:00"
-// }
-
-
+*/
