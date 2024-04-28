@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Spongebob",
+        "age": 30,
+        "isEmployed": true,
+        "hobbeies": ["Jellyfisging", "Karate", "Cooking"]
+    }, 
+    {
+        "name": "Patric",
+        "age": 34,
+        "isEmployed": false,
+        "hobbeies": ["Jellyfisging", "Karate", "Cooking"]
+    },
+    {
+        "name": "Squidwar",
+        "age": 50,
+        "isEmployed": true,
+        "hobbeies": ["Jellyfisging", "Karate", "Cooking"]
+    },
+    {
+        "name": "Sandy",
+        "age": 27,
+        "isEmployed": false,
+        "hobbeies": ["Jellyfisging", "Karate", "Cooking"]
+    }
+]
